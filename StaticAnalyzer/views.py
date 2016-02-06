@@ -1292,7 +1292,7 @@ def CodeAnalysis(APP_DIR,MD5,PERMS,TYP):
                         c['d_ssl'].append(jfile_path.replace(JS,''))
                     #Add Sachin's Code Here and Add support for detecting insecure ssl algoo's 
 
-                    if (('password = "') in dat.lower() or ('secret = "') in dat.lower() or ('username = "') in dat.lower() or ('key = "') in dat.lower()):
+                    if (('password = "') in dat.lower() or ('secret = "') in dat.lower() or ('username = "') in dat.lower() or ('key = "') in dat.lower() or ('senha = "') in dat.lower() or ('usuario = "') in dat.lower() or ('cartao = "') in dat.lower() or ('login = "') in dat.lower() or ('credencial = "') in dat.lower() or ('chave = "') in dat.lower()):
                         c['d_sensitive'].append(jfile_path.replace(JS,''))
                     if (('import dexguard.util') in dat and ('DebugDetector.isDebuggable') in dat):
                         c['dex_debug'].append(jfile_path.replace(JS,''))
